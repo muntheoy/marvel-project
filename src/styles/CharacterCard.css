@@ -1,0 +1,38 @@
+.CharacterCard {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 20%;
+    height: 20%;
+    border: 0.1em solid white;
+    position: relative; 
+    text-align: left;
+}
+
+.CharacterCard-img {
+    object-fit: cover;
+    width: 100%; /* изменяем ширину картинки на 100% */
+    height: 50%; /* изменяем высоту картинки на 50% */
+    position: relative; /* изменяем позиционирование на относительное, чтобы оставить текст в потоке документа */
+    top: 0; /* убираем смещение по вертикали */
+}
+
+.CharacterCard-text{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.CharacterCard-text p{
+    margin-top: 0.5em;
+    font-family:'Barlow', sans-serif;
+
+}
+
+.CharacterCard-text h3{
+    margin: 0;
+    font-family:'Barlow', sans-serif;
+    font-weight: 600;
+    color: #ed1a3b;
+    
+}
