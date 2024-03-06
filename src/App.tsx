@@ -1,69 +1,38 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Импортируем Routes и Route
+import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { Character } from './types/ICharacter';
+import { Character, Comic } from './types/ICharacter';
 import ironManImage from './assets/iron-man.jpeg';
 import Characters from './pages/Characters';
+import ComicCard from './components/ComicCard';
 
 function App() {
-  const characters: Character[] = [
-    {
-      id: 0,
-      name: 'Iron Man',
-      description: 'Genius, billionaire, playboy, philanthropist. дувррдзцщзгшраодыфв.',
-      image: ironManImage,
-    },
-    {
-      id: 1,
-      name: 'Iron Man',
-      description: 'Genius, billionaire, playboy, philanthropist.',
-      image: ironManImage,
-    },
+  const character: Character = {
+    id: 0,
+    name: 'Iron Man',
+    description: 'Genius, billionaire, playboy, philanthropist. дувррдзцщзгшраодыфв.',
+    image: ironManImage,
+  };
 
-    {
-      id: 1,
-      name: 'Iron Man',
-      description: 'Genius, billionaire, playboy, philanthropist.',
-      image: ironManImage,
-    },
-    {
-      id: 1,
-      name: 'Iron Man',
-      description: 'Genius, billionaire, playboy, philanthropist.',
-      image: ironManImage,
-    },
-    {
-      id: 1,
-      name: 'Iron Man',
-      description: 'Genius, billionaire, playboy, philanthropist.',
-      image: ironManImage,
-    },
-    {
-      id: 1,
-      name: 'Iron Man',
-      description: 'Genius, billionaire, playboy, philanthropist.',
-      image: ironManImage,
-    },
-    {
-      id: 1,
-      name: 'Iron Man',
-      description: 'Genius, billionaire, playboy, philanthropist.',
-      image: ironManImage,
-    },
-    
-    
+  // Создаем массив объектов Comic с уникальными ссылками
+  const comics: Comic[] = [
+    { title: 'Comic 1', link: 'https://www.example.com/comic1' },
+    { title: 'Comic 2', link: 'https://www.example.com/comic2' },
+    { title: 'Comic 3', link: 'https://www.example.com/comic3' },
   ];
 
   return (
     <Router>
       <div className="App">
         <Header />
-        <Routes> {/* Оборачиваем маршруты в компонент Routes */}
-          <Route path="/characters" element={<Characters characters={characters} />} /> {/* Используем element вместо component */}
+        {/* Передача данных в ComicCard */}
+        <ComicCard character={character} comics={comics} />
+        <Routes>
+          {/* Добавьте роуты здесь, если необходимо */}
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );

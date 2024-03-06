@@ -1,13 +1,13 @@
 import React from 'react';
-import '../styles/ComicCard.css';
 import { Character, Comic } from '../types/ICharacter';
+import '../styles/ComicCard.css';
 
-export interface ComicCardProps {
+export interface CharacterCardProps {
   character: Character;
-  comics: Comic[];
+  comics: Comic[]; // Обновляем тип данных для списка комиксов
 }
 
-const ComicCard: React.FC<ComicCardProps> = ({ character, comics }) => {
+const ComicCard: React.FC<CharacterCardProps> = ({ character, comics }) => {
   return (
     <div className="CharacterCard">
       <img className="ComisCard-img" src={character.image} alt={character.name} />
@@ -19,7 +19,10 @@ const ComicCard: React.FC<ComicCardProps> = ({ character, comics }) => {
         <div className='ComicCard-text-list'>
           <h3>Comics</h3>
           {comics.map((comic, index) => (
-            <a key={index} href={comic.link} target="_blank" rel="noopener noreferrer">{comic.title}</a>
+            <div key={index}>
+              {/* Гиперссылка на комикс */}
+              <a href={comic.link} target="_blank" rel="noopener noreferrer">{comic.title}</a>
+            </div>
           ))}
         </div>
       </div>
