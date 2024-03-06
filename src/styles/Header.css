@@ -1,0 +1,29 @@
+.Header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    background-color: #ed1a3b;
+    justify-content: center;
+    justify-content: space-between;
+    
+    
+}
+
+.Header-logo{
+    width: 10vb;
+    height: auto;
+    margin: 0 1%;
+}
+
+.Header-text{
+    width: 15vb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1%;
+    justify-content: space-between;
+    color : #ffad52;
+    gap: 1em;
+    margin: 0 2%;
+}
