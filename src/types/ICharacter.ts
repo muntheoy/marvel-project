@@ -4,3 +4,8 @@ export interface Character {
   description: string;
   image: string;
 }
+
+export interface Comic {
+  title: string;
+  link: string;
+}

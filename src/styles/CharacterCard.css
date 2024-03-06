@@ -6,7 +6,7 @@
     border: 0.1em solid white;
     position: relative; 
     text-align: left;
-    width: 15.2%; /* Ширина карточки с учетом отступов */
+    width: 15.2%; 
     margin: 0.5%;
 }
 
