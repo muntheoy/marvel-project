@@ -1,0 +1,39 @@
+.Footer{
+    background-color: #555555;
+    padding: 1em;   
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    
+    
+}
+
+.Footer-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+
+.Footer-content p{
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+.Footer-content a:link,
+.Footer-content a:visited,
+.Footer-content a:hover,
+.Footer-content a:active {
+    color: white !important;
+    text-decoration: none !important;
+    margin-top: 0.5em;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+.Footer-logo{
+    width: 5em; 
+    height: auto;
+    margin-bottom: 0.5em;
+}
