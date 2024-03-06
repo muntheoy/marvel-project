@@ -1,8 +1,9 @@
 .CharacterList {
     display: flex;
     flex-wrap: wrap;
-    gap: 4em;
-    flex-direction: row;    
+    margin: 0 -2em;
+    flex-direction: row;
+    justify-content: center;
   }
   
   

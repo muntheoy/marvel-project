@@ -1,10 +1,10 @@
 import React from 'react';
-import CharacterCard from './CharacterCard'; // Предполагается, что CharacterCard находится в том же каталоге
+import CharacterCard from './CharacterCard'; 
 import { Character } from '../types/ICharacter';
 import '../styles/CharacterList.css'
 
 export interface CharacterListProps {
-  characters: Character[]; // Предполагается, что у вас есть массив персонажей
+  characters: Character[];
 }
 
 const CharacterList: React.FC<CharacterListProps> = ({ characters }) => {
