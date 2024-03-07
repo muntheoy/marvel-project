@@ -1,38 +1,29 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { Character, Comic } from './types/ICharacter';
-import ironManImage from './assets/iron-man.jpeg';
-import Characters from './pages/Characters';
-import ComicCard from './components/ComicCard';
+import Comics from './pages/Comics'; // Импортируем компонент страницы комиксов
+import { characters } from './data/characters'; // Импортируем данные о персонажах
+import { ironManComics, captainAmericaComics, thorComics } from './data/comics'; // Импортируем данные о комиксах
+import './App.css';
+
+// Создаем объект comicsMap, где ключами являются идентификаторы персонажей, а значениями - массивы комиксов для каждого персонажа
+const comicsMap = {
+  0: ironManComics,
+  1: captainAmericaComics,
+  2: thorComics,
+};
 
 function App() {
-  const character: Character = {
-    id: 0,
-    name: 'Iron Man',
-    description: 'Genius, billionaire, playboy, philanthropist. дувррдзцщзгшраодыфв.',
-    image: ironManImage,
-  };
-
-  // Создаем массив объектов Comic с уникальными ссылками
-  const comics: Comic[] = [
-    { title: 'Comic 1', link: 'https://www.example.com/comic1' },
-    { title: 'Comic 2', link: 'https://www.example.com/comic2' },
-    { title: 'Comic 3', link: 'https://www.example.com/comic3' },
-  ];
-
   return (
     <Router>
       <div className="App">
         <Header />
-        {/* Передача данных в ComicCard */}
-        <ComicCard character={character} comics={comics} />
         <Routes>
-          {/* Добавьте роуты здесь, если необходимо */}
+          {/* Роут для страницы комиксов */}
+          <Route path="/comics" element={<Comics characters={characters} comicsMap={comicsMap} />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );
