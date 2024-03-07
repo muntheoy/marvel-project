@@ -44,7 +44,7 @@
 .ComicCard-text-description p{
     font-family:'Barlow', sans-serif;
     font-weight: 500;
-    font-size: 14pt;
+    font-size: 18pt;
     margin-top: -1em;
 }
 
@@ -56,4 +56,13 @@
     font-family:'Barlow', sans-serif;
     font-weight: 600;
     font-size: 18pt;
+}
+
+.ComicCard-text-list a{
+    margin-top: -1em;
+    font-family:'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 14pt;
+    gap: 1em;
+    color: aqua;
 }

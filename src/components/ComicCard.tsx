@@ -9,7 +9,7 @@ export interface CharacterCardProps {
 
 const ComicCard: React.FC<CharacterCardProps> = ({ character, comics }) => {
   return (
-    <div className="CharacterCard">
+    <div className="ComicCard">
       <img className="ComisCard-img" src={character.image} alt={character.name} />
       <div className="ComicCard-text">
         <div className='ComicCard-text-description'>
@@ -20,7 +20,6 @@ const ComicCard: React.FC<CharacterCardProps> = ({ character, comics }) => {
           <h3>Comics</h3>
           {comics.map((comic, index) => (
             <div key={index}>
-              {/* Гиперссылка на комикс */}
               <a href={comic.link} target="_blank" rel="noopener noreferrer">{comic.title}</a>
             </div>
           ))}

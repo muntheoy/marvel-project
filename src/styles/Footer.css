@@ -1,12 +1,12 @@
-.Footer{
+
+.Footer {
     background-color: #555555;
     padding: 1em;   
-    bottom: 0;
     width: 100%;
     position: fixed;
-    
-    
+    bottom: 0;
 }
+
 
 .Footer-content{
     display: flex;

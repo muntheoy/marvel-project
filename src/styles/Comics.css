@@ -1,0 +1,4 @@
+.Comics{
+    display: flex;
+    flex-direction: column;
+}
