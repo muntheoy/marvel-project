@@ -5,7 +5,7 @@ export interface Character {
   image: string;
 }
 
-export interface Comic {
+export interface CharacterDetails {
   title: string;
   link: string;
 }

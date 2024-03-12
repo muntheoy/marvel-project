@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Comics from './pages/Comics'; // Импортируем компонент страницы комиксов
 import { characters } from './data/characters'; // Импортируем данные о персонажах
-import { ironManComics, captainAmericaComics, thorComics } from './data/comics'; // Импортируем данные о комиксах
+
 import './App.css';
 import Characters from './pages/Characters';
 import AppRouter from './components/AppRouter';

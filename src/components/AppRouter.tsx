@@ -1,22 +1,20 @@
-// AppRouter.js
-
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Characters from '../pages/Characters';
-import Comics from '../pages/Comics';
 import { characters } from '../data/characters';
-import { ironManComics, captainAmericaComics, thorComics, spiderManicaComics, deadpoolComics, hulkComics } from '../data/comics';
+import Comics from '../pages/Comics';
+import { comics } from '../data/comics';
 
-const comicsMap = {
-  0: ironManComics,
-  1: captainAmericaComics,
-  2: thorComics,
-  3: spiderManicaComics,
-  4: deadpoolComics,
-  5: hulkComics
-};
+// const comicsMap = {
+//   0: ironManComics,
+//   1: captainAmericaComics,
+//   2: thorComics,
+//   3: spiderManicaComics,
+//   4: deadpoolComics,
+//   5: hulkComics
+// };
 
 const AppRouter = () => {
   const [showFooter, setShowFooter] = useState(false);
@@ -41,7 +39,7 @@ const AppRouter = () => {
         <Header />
         <Routes>
           <Route path="/characters" element={<Characters character={characters} />} />
-          <Route path="/comics" element={<Comics characters={characters} comicsMap={comicsMap} />} />
+          <Route path="/comics" element={<Comics comic={comics} />} />
         </Routes>
         {showFooter && <Footer />}
       </div>
