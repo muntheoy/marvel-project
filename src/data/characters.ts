@@ -1,5 +1,4 @@
-import { Character, CharacterDetails } from '../types/ICharacter';
-
+import { Character, CharacterDetails } from "../types/ICharacter";
 import ironMan from '../assets/iron-man.jpeg';
 import captainAmerica from '../assets/captain-america.jpg';
 import thor from '../assets/thor.jpeg';
@@ -56,7 +55,7 @@ export const captainAmericaDetails: CharacterDetails[] = [
   { title: 'Captain America vol 2', link: 'https://www.example.com/captain-america-comic2' },
 ];
 
-export const thorDetailss: CharacterDetails[] = [
+export const thorDetail: CharacterDetails[] = [
   { title: 'Asgardians of the Galaxy', link: 'https://drawnstories.ru/comics/marvel-comics/thor/asgardians-of-the-galaxy' },
   { title: 'Beta Ray Bill', link: 'https://drawnstories.ru/comics/marvel-comics/thor/beta-ray-bill-2021' },
 ];

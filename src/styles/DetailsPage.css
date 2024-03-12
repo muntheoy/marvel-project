@@ -1,0 +1,40 @@
+.DetailsCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.DetailsCard-img{
+    object-fit: cover; 
+    height: 450px;
+    position: relative;
+    top: 0;
+    object-position: center top;
+
+}
+
+.DetailsCard-text{
+    padding: 3em;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    
+    text-align: left;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.DetailsCard-text-description{
+    width: 40em;
+}
+
+.DetailsCard-text-details{
+    width: 40em;
+    
+}
+
+.DetailsCard-text-details a{
+    display: flex;
+    flex-direction: column;
+    color: aqua;
+    text-decoration: none;
+}
