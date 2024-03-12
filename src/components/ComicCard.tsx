@@ -8,8 +8,8 @@ interface ComicCardProps {
 
 const ComicCard: React.FC<ComicCardProps> = ({ comic }) => {
   return (
-    <div className="CharacterCard">
-      <img className="CharacterCard-img" src={comic.image} alt={comic.name} />
+    <div className="DetaislCard">
+      <img className="DetaislCard-img" src={comic.image} alt={comic.name} />
       <div className="CharacterCard-text">
         <h3>{comic.name}</h3>
         <p>{comic.description}</p>
