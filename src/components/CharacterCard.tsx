@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Character } from '../types/ICharacter';
 import '../styles/CharacterCard.css';
 
@@ -8,13 +9,14 @@ interface CharacterCardProps {
 
 const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
   return (
-    <div className="CharacterCard">
-      <img className="CharacterCard-img" src={character.image} alt={character.name} />
-      <div className="CharacterCard-text">
-        <h3>{character.name}</h3>
-        <p>{character.description}</p>
-      </div>
-    </div>
+  
+      <Link to={`/character/${character.id}`} className="CharacterCard" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <img className="CharacterCard-img" src={character.image} alt={character.name} />
+        <div className="CharacterCard-text">
+          <h3>{character.name}</h3>
+          <p>{character.description}</p>
+        </div>
+      </Link>
   );
 };
 

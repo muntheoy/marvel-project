@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Characters from '../pages/Characters';
-import { characters } from '../data/characters';
+import { characters, ironManDetails } from '../data/characters';
 import Comics from '../pages/Comics';
 import { comics } from '../data/comics';
+import { DetailsCharacter } from '../pages/CharacterDetails';
 
-// const comicsMap = {
-//   0: ironManComics,
-//   1: captainAmericaComics,
-//   2: thorComics,
-//   3: spiderManicaComics,
-//   4: deadpoolComics,
-//   5: hulkComics
-// };
+import { Character, CharacterDetails } from '../types/ICharacter';
+import Prikol from '../pages/prikol';
 
-const AppRouter = () => {
+
+
+
+
+export const AppRouter: React.FC<{}> = () => {
+  const { characterId } = useParams();
   const [showFooter, setShowFooter] = useState(false);
 
   useEffect(() => {
@@ -38,7 +38,8 @@ const AppRouter = () => {
       <div>
         <Header />
         <Routes>
-          <Route path="/characters" element={<Characters character={characters} />} />
+          <Route path="/characters" element={<Characters character={characters} />}/>
+          <Route path="/character/:characterId" element={<Prikol details={[]}  />} />
           <Route path="/comics" element={<Comics comic={comics} />} />
         </Routes>
         {showFooter && <Footer />}
