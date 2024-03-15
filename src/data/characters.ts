@@ -43,12 +43,7 @@ export const characters: Character[] = [
     description: 'A scientist exposed to gamma radiation, who transforms into a giant, green rage monster when angry.',
     image: hulk
   },
-  {
-    id: 6,
-    name: 'hui',
-    description: 'honesty, i wanna die',
-    image: hulk
-  },
+  
 ];
 
 export const ironManDetails: CharacterDetails[] = [

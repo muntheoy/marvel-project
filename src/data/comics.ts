@@ -1,9 +1,9 @@
-import thorComicImage from '../assets/thor.jpeg';
-import spiderManComicImage from '../assets/spider-man.jpeg';
-import deadpoolComicImage from '../assets/deadpool.jpeg';
-import hulkComicImage from '../assets/hulk.jpeg';
-import ironManComicImage from '../assets/iron-man.jpeg';
-import captainAmericaComicImage from '../assets/captain-america.jpg';
+import thorComicImage from '../assets/thorcomic.avif';
+import spiderManComicImage from '../assets/spidercomic.jpg.webp';
+import deadpoolComicImage from '../assets/deadpoolcomic.avif';
+import hulkComicImage from '../assets/hulkcomic.avif';
+import ironManComicImage from '../assets/irohmancomic.jpg';
+import captainAmericaComicImage from '../assets/capcomic.jpeg';
 import { Comic, ComicrDetails } from '../types/IComic';
 
 

@@ -1,10 +1,11 @@
+
 .Characters{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     color: white;
     text-align: left;
     padding: 0 2%;
+    padding-bottom: 50px;
 }
 
 .Characters-title{

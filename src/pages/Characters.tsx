@@ -19,19 +19,22 @@ const Characters: React.FC<CharactersPageProps> = ({ character: characters }) =>
   };
 
   return (
-    <div className="Characters">
-      <div className='Characters-title'>
-        <h2>Characters</h2>
-        <h1>({filteredCharacters.length})</h1>
-      </div>
-      <div className='Characters-search-container'>
-        <input type="text" placeholder="Search..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-        <button onClick={handleSearch}>Search</button>
-      </div>
-      <div className='Characters-line'></div>
-      <CharacterList characters={filteredCharacters} />
 
-    </div>
+
+      <div className="Characters">
+        <div className='Characters-title'>
+          <h2>Characters</h2>
+          <h1>({filteredCharacters.length})</h1>
+        </div>
+        <div className='Characters-search-container'>
+          <input type="text" placeholder="Search..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+          <button onClick={handleSearch}>Search</button>
+        </div>
+        <div className='Characters-line'></div>
+        <CharacterList characters={filteredCharacters} />
+      </div>
+
+
   );
 };
 

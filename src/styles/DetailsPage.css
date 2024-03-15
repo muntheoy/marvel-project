@@ -1,4 +1,5 @@
 .DetailsCard{
+    padding: 0px;
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +18,6 @@
     display: flex;
     flex-direction: row;
     color: white;
-    
     text-align: left;
     justify-content: center;
     justify-content: space-evenly;

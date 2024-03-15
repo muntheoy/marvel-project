@@ -1,4 +1,5 @@
 .ComisCard{
+    padding-top: -50px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -49,6 +50,7 @@
 }
 
 .ComicCard-text-list{
+    padding: 0;
 
 }
 
