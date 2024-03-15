@@ -1,7 +1,7 @@
 import "./App.css";
 import { characters, ironManDetails } from "./data/characters";
 import { useEffect, useState } from "react";
-import { Route, BrowserRouter as Router, Routes, Navigate } from "react-router-dom"; // Импортируем Navigate из react-router-dom
+import { Route, BrowserRouter as Router, Routes, Navigate } from "react-router-dom"; 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Characters from "./pages/Characters";
