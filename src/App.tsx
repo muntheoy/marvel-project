@@ -1,7 +1,7 @@
 import "./App.css";
 import { characters, ironManDetails } from "./data/characters";
 import { useEffect, useState } from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, Navigate } from "react-router-dom"; // Импортируем Navigate из react-router-dom
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Characters from "./pages/Characters";
@@ -17,6 +17,10 @@ function App() {
         <div className="up">
           <Header />
           <Routes>
+            <Route
+              path="/"
+              element={<Navigate to="/characters" />} // Указываем маршрут по умолчанию на страницу с персонажами
+            />
             <Route
               path="/characters"
               element={<Characters character={characters} />}
