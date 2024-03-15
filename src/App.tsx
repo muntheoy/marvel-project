@@ -1,5 +1,4 @@
 import './App.css';
-import ironManImage from './assets/iron-man.jpeg';
 
 
 function App() {
