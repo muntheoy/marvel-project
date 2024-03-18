@@ -9,12 +9,14 @@ import Comics from "./pages/Comics";
 import { comics } from "./data/comics";
 import DetailsCharacter from "./pages/DetailsCharacter";
 import DetailsComic from "./pages/DetailsComic";
+import Pricol from "./components/Prikol";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <div className="up">
+        <Pricol/>
+        {/* <div className="up">
           <Header />
           <Routes>
             <Route
@@ -36,7 +38,7 @@ function App() {
             />
           </Routes>
         </div>
-        <Footer />
+        <Footer /> */}
       </div>
     </Router>
   );
